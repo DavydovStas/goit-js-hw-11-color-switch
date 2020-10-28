@@ -19,9 +19,9 @@ const randomIntegerFromInterval = (min, max) => {
 
 let timerId = null;
 
-refs.startButton.addEventListener('click', () => {onStartClick()});
+refs.startButton.addEventListener('click', onStartClick);
   
-refs.stopButton.addEventListener('click', () => {onStopClick()})
+refs.stopButton.addEventListener('click', onStopClick)
 
 function onStartClick() {
   if (refs.startButton.className === 'active') { return };
